@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email Marketing Service | Abhik Sao</title>
+    <!-- ✅ Meta Description -->
+<meta name="description" content="Boost engagement with Abhik Sao’s email marketing services. Affordable plans, automation, and high conversions guaranteed.">
+
+<!-- ✅ Meta Keywords -->
+<meta name="keywords" content="Email Marketing, Digital Marketing, Abhik Sao, Automation, Newsletter, Mailchimp, Campaigns">
+
+<!-- ✅ Robots -->
+<meta name="robots" content="index, follow">
+
+
+
+<!-- ✅ Open Graph (for social sharing) -->
+<meta property="og:title" content="Email Marketing Service | Abhik Sao">
+<meta property="og:description" content="Affordable, automated email marketing for growing businesses. Let your message reach the right people.">
+<meta property="og:image" content="https://yourdomain.com/images/email-og.jpg">
+<meta property="og:url" content="https://abhiksao.github.io/services/email-marketing.html">
+<meta property="og:type" content="website">
+
+<!-- ✅ Favicon -->
+<link rel="icon" href="favicon.ico" type="image/icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanwXkVx3Y5Tn1Z84xvj27XcUgOXq6lq7LNT+6z67e9J4h27P4zF0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        :root {
+            --primary-color: #224957;
+            --accent-color: #ff6f61;
+            --background-color: #fafafa;
+            --text-color: #1a1a1a;
+            --text-light: #555;
+            --btn-hover: #e65c50;
+            --form-bg: #fff;
+            --box-shadow: 0 4px 12px rgba(34, 73, 87, 0.15);
+            --border-radius: 12px;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 90px 25px 100px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 50px;
+        }
+        .hero h1 {
+            font-size: 2.75rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto 35px;
+            color: #dce6eb;
+        }
+        .hero button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            font-size: 1.15rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+        .hero button:hover,
+        .hero button:focus {
+            background-color: var(--btn-hover);
+            outline: none;
+        }
+        h2 {
+            font-size: 2.1rem;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .section {
+            background-color: var(--form-bg);
+            padding: 35px 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 50px;
+        }
+        .section p {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        ul, ol {
+            max-width: 850px;
+            margin: 0 auto;
+            padding-left: 1.4rem;
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-bottom: 0;
+        }
+        ul li, ol li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        ul li i, ol li i {
+            margin-right: 12px;
+            color: var(--accent-color);
+            min-width: 20px;
+            font-size: 1.3rem;
+        }
+        /* Feature Cards Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 28px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .feature {
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 25px rgba(255, 111, 97, 0.15);
+            padding: 25px 20px 35px;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .feature:hover,
+        .feature:focus-within {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(255, 111, 97, 0.35);
+        }
+        .feature i {
+            font-size: 2.8rem;
+            color: var(--accent-color);
+            margin-bottom: 18px;
+        }
+        .feature h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        /* Pricing Table */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .plan {
+            background-color: var(--form-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px 25px;
+            flex: 1 1 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .plan:hover,
+        .plan:focus-within {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(255, 111, 97, 0.4);
+        }
+        .plan h3 {
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin: 0 0 20px;
+        }
+        .plan p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin: 0 0 25px;
+            text-align: center;
+        }
+        .plan strong {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            display: block;
+        }
+        .plan button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            width: 80%;
+        }
+        .plan button:hover,
+        .plan button:focus {
+            background-color: var(--btn-hover);
+            outline: none;
+        }
+        /* CTA Section */
+        .final-cta {
+            background-color: var(--form-bg);
+            padding: 45px 20px;
+            text-align: center;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 40px;
+        }
+        .final-cta h2 {
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        .final-cta button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 18px 48px;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .final-cta button:hover,
+        .final-cta button:focus {
+            background-color: var(--btn-hover);
+            outline: none;
+        }
+        /* Contact Form */
+        form {
+            max-width: 700px;
+            margin: 0 auto 60px;
+            background: var(--form-bg);
+            padding: 35px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        form h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1.8px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(255,111,97,0.3);
+        }
+        button[type="submit"] {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 16px 30px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        button[type="submit"]:hover,
+        button[type="submit"]:focus {
+            background-color: var(--btn-hover);
+            outline: none;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+            .pricing {
+                flex-direction: column;
+            }
+            .plan {
+                flex: 1 1 100%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (max-width: 480px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Email Marketing Service Introduction">
+      <h1>Boost Engagement with Powerful Email Marketing</h1>
+      <p>Targeted, Personalized, and High-Converting Campaigns Delivered to Inbox</p>
+      <button type="button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get Started Now</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading">What is Email Marketing?</h2>
+      <p>Email marketing is one of the most powerful tools to connect directly with your audience. Whether it's launching a product, sharing updates, or building loyalty, I create highly engaging and targeted email campaigns that deliver results. From list management to automation – everything is handled for you.</p>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="section" aria-labelledby="features-heading">
+      <h2 id="features-heading">Key Features</h2>
+      <div class="features">
+        <div class="feature" tabindex="0">
+          <i class="fas fa-envelope fa-fw"></i>
+          <h3>Personalized Email Campaigns</h3>
+        </div>
+        <div class="feature" tabindex="0">
+          <i class="fas fa-users fa-fw"></i>
+          <h3>Audience Segmentation</h3>
+        </div>
+        <div class="feature" tabindex="0">
+          <i class="fas fa-vials fa-fw"></i>
+          <h3>A/B Testing</h3>
+        </div>
+        <div class="feature" tabindex="0">
+          <i class="fas fa-cogs fa-fw"></i>
+          <h3>Automated Sequences</h3>
+        </div>
+        <div class="feature" tabindex="0">
+          <i class="fas fa-mobile-alt fa-fw"></i>
+          <h3>Mobile-Responsive Templates</h3>
+        </div>
+        <div class="feature" tabindex="0">
+          <i class="fas fa-chart-pie fa-fw"></i>
+          <h3>Detailed Analytics Reports</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="section" aria-labelledby="included-heading">
+      <h2 id="included-heading">What’s Included in the Service?</h2>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Campaign Strategy &amp; Planning</li>
+        <li><i class="fas fa-check-circle"></i> 4 to 8 Custom Emails per Month</li>
+        <li><i class="fas fa-check-circle"></i> Newsletter Design &amp; Content Writing</li>
+        <li><i class="fas fa-check-circle"></i> List Cleaning &amp; Management</li>
+        <li><i class="fas fa-check-circle"></i> Integration with tools like Mailchimp, Brevo, etc.</li>
+        <li><i class="fas fa-check-circle"></i> Performance Tracking &amp; Reporting</li>
+      </ul>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" aria-labelledby="how-it-works-heading">
+      <h2 id="how-it-works-heading">How It Works</h2>
+      <ul>
+        <li><i class="fas fa-search"></i> Understanding your brand &amp; goals</li>
+        <li><i class="fas fa-pencil-alt"></i> Creating a custom email strategy</li>
+        <li><i class="fas fa-file-alt"></i> Designing and writing email content</li>
+        <li><i class="fas fa-calendar-check"></i> Scheduling and launching campaigns</li>
+        <li><i class="fas fa-chart-line"></i> Analyzing performance and optimizing</li>
+      </ul>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="section" aria-labelledby="why-choose-heading">
+      <h2 id="why-choose-heading">Why Choose Me for Your Email Marketing?</h2>
+      <ul>
+        <li><i class="fas fa-dollar-sign"></i> Affordable and high-ROI marketing</li>
+        <li><i class="fas fa-clock"></i> Quick turnaround time</li>
+        <li><i class="fas fa-palette"></i> Clean and appealing design</li>
+        <li><i class="fas fa-comments"></i> Personalized communication</li>
+        <li><i class="fas fa-chart-line"></i> Proven growth in open and conversion rates</li>
+      </ul>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading">Choose Your Plan</h2>
+      <div class="pricing">
+        <div class="plan" tabindex="0">
+          <h3>Starter</h3>
+          <p>4 emails/month, basic reporting</p>
+          <strong>₹999/month</strong>
+        </div>
+        <div class="plan" tabindex="0">
+          <h3>Growth</h3>
+          <p>8 emails/month, automation setup, reporting</p>
+          <strong>₹1999/month</strong>
+        </div>
+        <div class="plan" tabindex="0">
+          <h3>Pro</h3>
+          <p>8+ emails/month, A/B testing, advanced analytics</p>
+          <strong>₹2999/month</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Send an Inquiry</h2>
+      <form novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your full name"  />
+        
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Your email address" />
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required placeholder="Your contact number" />
+
+        <label for="plan">Select Plan</label>
+        <select id="plan" name="plan" required>
+          <option value="" disabled selected>Choose a plan</option>
+          <option value="starter">Starter - ₹999/month</option>
+          <option value="growth">Growth - ₹1999/month</option>
+          <option value="pro">Pro - ₹2999/month</option>
+        </select>
+
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Additional details or questions"></textarea>
+
+        <button type="submit">Send Inquiry</button>
+      </form>
+    </section>
+
+  </div>
+
+</body>
+</html>
