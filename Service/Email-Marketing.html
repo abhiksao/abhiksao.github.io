@@ -452,7 +452,10 @@
     <!-- Contact Form -->
     <section class="section" id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Send an Inquiry</h2>
-      <form novalidate>
+      <form class="contact-form" action="https://formsubmit.co/abhiksao.23@gmail.com" method="POST" aria-label="Contact form for email marketing service request">
+             <input type="hidden" name="_captcha" value="false">
+             <input type="hidden" name="_next" value="https://abhiksao.github.io/thankyou.html">
+            <input type="hidden" name="service" value="Email Marketing Service">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required placeholder="Your full name"  />
         
